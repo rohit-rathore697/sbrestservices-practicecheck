@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="sandwich" class="com.cognizant.truyum.model.MenuItem">
+		<property name="id" value="1" />
+		<property name="name" value="Sandwich" />
+		<property name="price" value="99.0" />
+		<property name="active" value="true" />
+		<property name="dateOfLaunch" value="15/03/2017" />
+		<property name="category" value="Main Course" />
+		<property name="freeDelivery" value="false" />
+	</bean>
+
+	<bean id="burger" class="com.cognizant.truyum.model.MenuItem">
+		<property name="id" value="2" />
+		<property name="name" value="Burger" />
+		<property name="price" value="129.0" />
+		<property name="active" value="true" />
+		<property name="dateOfLaunch" value="12/07/2017" />
+		<property name="category" value="Main Course" />
+		<property name="freeDelivery" value="true" />
+	</bean>
+
+	<bean id="pizza" class="com.cognizant.truyum.model.MenuItem">
+		<property name="id" value="3" />
+		<property name="name" value="Pizza" />
+		<property name="price" value="149.0" />
+		<property name="active" value="true" />
+		<property name="dateOfLaunch" value="12/08/2018" />
+		<property name="category" value="Main Course" />
+		<property name="freeDelivery" value="true" />
+	</bean>
+
+	<bean id="fries" class="com.cognizant.truyum.model.MenuItem">
+		<property name="id" value="4" />
+		<property name="name" value="French Fries" />
+		<property name="price" value="57.0" />
+		<property name="active" value="true" />
+		<property name="dateOfLaunch" value="02/02/2017" />
+		<property name="category" value="Starters" />
+		<property name="freeDelivery" value="false" />
+	</bean>
+
+	<bean id="brownie" class="com.cognizant.truyum.model.MenuItem">
+		<property name="id" value="5" />
+		<property name="name" value="Choclate Brownie" />
+		<property name="price" value="75.0" />
+		<property name="active" value="true" />
+		<property name="dateOfLaunch" value="15/03/2017" />
+		<property name="category" value="Desert" />
+		<property name="freeDelivery" value="true" />
+	</bean>
+
+	<bean id="menulist" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="sandwich"></ref>
+				<ref bean="burger"></ref>
+				<ref bean="pizza"></ref>
+				<ref bean="fries"></ref>
+				<ref bean="brownie"></ref>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>

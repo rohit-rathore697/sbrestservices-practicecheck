@@ -1,0 +1,5 @@
+com\cognizant\truyum\TruyumApplication.class
+com\cognizant\truyum\model\MenuItem.class
+com\cognizant\truyum\model\Cart.class
+com\cognizant\truyum\dao\MenuItemDao.class
+com\cognizant\truyum\dao\MenuItemDaoCollectionImpl.class
