@@ -9,7 +9,11 @@
 		<property name="name" value="Sandwich" />
 		<property name="price" value="99.0" />
 		<property name="active" value="true" />
-		<property name="dateOfLaunch" value="15/03/2017" />
+		<property name="dateOfLaunch">
+			<bean factory-bean="dateFormater" factory-method="parse">
+				<constructor-arg value="15-03-2017" />
+			</bean>
+		</property>
 		<property name="category" value="Main Course" />
 		<property name="freeDelivery" value="false" />
 	</bean>
@@ -19,7 +23,11 @@
 		<property name="name" value="Burger" />
 		<property name="price" value="129.0" />
 		<property name="active" value="true" />
-		<property name="dateOfLaunch" value="12/07/2017" />
+		<property name="dateOfLaunch">
+            <bean factory-bean="dateFormater" factory-method="parse">
+                <constructor-arg value="25-12-2018" />
+            </bean>
+        </property>
 		<property name="category" value="Main Course" />
 		<property name="freeDelivery" value="true" />
 	</bean>
@@ -29,7 +37,11 @@
 		<property name="name" value="Pizza" />
 		<property name="price" value="149.0" />
 		<property name="active" value="true" />
-		<property name="dateOfLaunch" value="12/08/2018" />
+		<property name="dateOfLaunch">
+            <bean factory-bean="dateFormater" factory-method="parse">
+                <constructor-arg value="05-09-2017" />
+            </bean>
+        </property>
 		<property name="category" value="Main Course" />
 		<property name="freeDelivery" value="true" />
 	</bean>
@@ -39,7 +51,11 @@
 		<property name="name" value="French Fries" />
 		<property name="price" value="57.0" />
 		<property name="active" value="true" />
-		<property name="dateOfLaunch" value="02/02/2017" />
+		<property name="dateOfLaunch">
+            <bean factory-bean="dateFormater" factory-method="parse">
+                <constructor-arg value="22-11-2017" />
+            </bean>
+        </property>
 		<property name="category" value="Starters" />
 		<property name="freeDelivery" value="false" />
 	</bean>
@@ -49,7 +65,11 @@
 		<property name="name" value="Choclate Brownie" />
 		<property name="price" value="75.0" />
 		<property name="active" value="true" />
-		<property name="dateOfLaunch" value="15/03/2017" />
+		<property name="dateOfLaunch">
+            <bean factory-bean="dateFormater" factory-method="parse">
+                <constructor-arg value="4-04-2017" />
+            </bean>
+        </property>
 		<property name="category" value="Desert" />
 		<property name="freeDelivery" value="true" />
 	</bean>
